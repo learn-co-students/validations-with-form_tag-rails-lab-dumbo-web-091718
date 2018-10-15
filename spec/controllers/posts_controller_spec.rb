@@ -30,7 +30,7 @@ RSpec.describe PostsController do
 
     it "updates successfully" do
       @article.update(new_attributes)
-      expect(found.title).to eq(new_attributes[:title])
+      expect(@article.title).to eq(new_attributes[:title])
     end
 
     it "redirects to show page" do
@@ -76,4 +76,3 @@ RSpec.describe PostsController do
     end
   end
 end
-
